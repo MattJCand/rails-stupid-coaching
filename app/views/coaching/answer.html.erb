@@ -1,0 +1,17 @@
+<h1 style="text-align: center">Answer</h1>
+
+<div>
+  <h2 style="color: red"><%= @ask %></h2>
+  <h3>-You</h3>
+  <% if @ask.include? "?"%>
+    <h2 style="color: red">I don't care, get dressed and go to work!</h2>
+  <% elsif @ask == "I am going to work right now!"%>
+    <h2 style="color: red">""</h2>
+  <% else %>
+    <h2 style="color: red">I don't care, get dressed and go to work!</h2>
+  <% end %>
+  <h3>-Your Coach</h3>
+</div>
+
+
+<%= link_to "Ask new question", ask_path %>
